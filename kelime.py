@@ -1,6 +1,6 @@
 print ("Bu program Türkçedeki istediğiniz harfle başlayan ve istediğiniz harfle biten kelimeleri sıralar.")
-firstLetter = input("İLK HARF: ")
-lastLetter = input("SON HARF: ")
+firstLetter = input("İLK HARF: ").lower()
+lastLetter = input("SON HARF: ").lower()
 
 wordList = open("full.txt","r", encoding="utf-8") # full.txt dosyasını utf-8 e çevirerek açar
 word = wordList.read().splitlines() # keliemeleri liste haline getirdik 
